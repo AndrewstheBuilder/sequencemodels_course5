@@ -104,3 +104,13 @@
 - How do you find which words should be neutralized?
 - The people in the paper trained a classifier to find words in the english language that are definitional!
 - The full algorithm is more complicated than what is presented here.
+### Quiz
+- Even if the word "ecstatic" does not appear in the data set, your RNN might reasonably be expected to recognize "I'm ecstatic" as deserving a label.
+  - True. Word vectors empower the model with an incredible ability to generalize!!
+- ![alt text](image-1.png)
+  - Why is this not true?
+- ![alt text](image-2.png)
+  - I am thinking the answer here is that it does not handle UNK words. (unknown words) (Incorrect see explanation below)
+  - If the unknown token is added to the vocabulary and the vocab list is passed as an input to the Embedding layer, then the element-wise operation is valid even for the unknown token. (How the hell was I supposed to know that???)
+- Answer: Word embeddings are learned by picking a given word and trying to predict its surrounding words or vice versa. We pick a target word and try to predict its surrounding words ???? When do we do that??
+- These quizzes are bullshit
