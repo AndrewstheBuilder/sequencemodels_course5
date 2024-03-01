@@ -114,3 +114,7 @@
   - If the unknown token is added to the vocabulary and the vocab list is passed as an input to the Embedding layer, then the element-wise operation is valid even for the unknown token. (How the hell was I supposed to know that???)
 - Answer: Word embeddings are learned by picking a given word and trying to predict its surrounding words or vice versa. We pick a target word and try to predict its surrounding words ???? When do we do that??
 - These quizzes are bullshit
+### Project #2 - Emoji_v3a
+- TODOs on Model 1:
+- I do not understand the cost function of Model #1. Its using a log function and I want to understand how we got there. It may help me understand the cost function from the Grokking Deep Learning book.
+- Also I do not understand how the cost function works
