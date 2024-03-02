@@ -117,4 +117,4 @@
 ### Project #2 - Emoji_v3a
 - TODOs on Model 1:
 - I do not understand the cost function of Model #1. Its using a log function and I want to understand how we got there. It may help me understand the cost function from the Grokking Deep Learning book.
-- Also I do not understand how the cost function works
+- Also I do not understand how the cost function works. LOL just said the same thing twice.
