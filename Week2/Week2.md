@@ -118,3 +118,9 @@
 - TODOs on Model 1:
 - I do not understand the cost function of Model #1. Its using a log function and I want to understand how we got there. It may help me understand the cost function from the Grokking Deep Learning book.
 - Also I do not understand how the cost function works. LOL just said the same thing twice.
+- Understanding why the cost function uses log is more complex than it seems. The intention of the cost function is to take the inputs and outputs and compare them to see how far of the Machine Learning algorithm was. The use of log is not a obvious thing for that intention.
+- What is **negative sampling** in word2vec?
+  - The size of our word vocabulary means that our skip gram neural network has a tremendous number of weights, each of which would be updated slightly by every one of our billions of training samples.
+  - negative sampling addresses this by having each training sample only modify a small percentage of the weights, rather than all of them. (This also somehow makes the quality of the word embeddings better)
+  - It does this by selecting a small number of random words to update '0' for alongside the positive ('1') sample. Remember that each label or correct output of the network is a one hot vector with 1 in the correct label index spot and 0s elsewhere. Its expensive to update the entire vocab with 0s and only one place with the 1s. So we are going to use **negative sampling** as described here to take care of that.
+    - I wish I could recall the update I believe its the output_onehot * the weights or the predicted one hot?
